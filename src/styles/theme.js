@@ -11,8 +11,8 @@ export default {
       TEXT_BUTTON: '#312E38',
   
       WHITE: '#F4EDE8',
-      PINK_900: '#FF859B',
-      PINK_800: '#282124',
+      PINK_200: '#FF859B',
+      PINK_100: '#282124',
   
       RED: '#FF002E',
     },
