@@ -9,10 +9,11 @@ export default {
       GRAY_100: '#999591',
   
       TEXT_BUTTON: '#312E38',
+      TEXT_TAG: '#E5E5E5',
   
       WHITE: '#F4EDE8',
-      PINK_200: '#FF859B',
-      PINK_100: '#282124',
+      PINK: '#FF859B',
+      BROWN: '#282124',
   
       RED: '#FF002E',
     },

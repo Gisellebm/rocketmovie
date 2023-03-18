@@ -16,7 +16,10 @@ export const Container = styled.header`
     border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_200};
 
     > h1 {
-        color: ${({ theme }) => theme.COLORS.PINK_200};
+        color: ${({ theme }) => theme.COLORS.PINK};
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        font-weight: 700;
     }
 `;
 
@@ -24,11 +27,12 @@ export const Profile = styled.div`
     display: flex;
     align-items: center;
     width: 25%;
-    justify-content: end;
+    
 
     > div {
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
 
         margin-right: 1rem;
 
