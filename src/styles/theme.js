@@ -7,6 +7,7 @@ export default {
       GRAY_300: '#948F99',
       GRAY_200: '#3E3B47',
       GRAY_100: '#999591',
+      GRAY_50: '#CAC4CF',
   
       TEXT_BUTTON: '#312E38',
       TEXT_TAG: '#E5E5E5',

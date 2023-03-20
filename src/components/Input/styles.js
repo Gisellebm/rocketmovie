@@ -5,6 +5,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
+
     background-color: ${({ theme }) => theme.COLORS.GRAY_400};
     color: ${({ theme }) => theme.COLORS.GRAY_300};
     border-radius: 1rem;

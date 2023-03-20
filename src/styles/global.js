@@ -20,6 +20,7 @@ export default createGlobalStyle`
         font-family: 'Roboto Slab', serif;
         font-size: 1.6rem;
         outline: none;
+        -webkit-font-smoothing: antialiased;
     }
 
     a {

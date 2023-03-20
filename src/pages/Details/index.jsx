@@ -3,6 +3,7 @@ import { Container, Content } from './styles';
 import { Header } from '../../components/Header';
 import { ButtonText } from '../../components/ButtonText';
 import { Tag } from '../../components/Tag';
+import { Star } from '../../components/Star';
 
 
 export function Details() {
@@ -16,6 +17,7 @@ export function Details() {
             <ButtonText icon={FiArrowLeft} title="Voltar" />
             <div className="title">
               <h1>Interestellar</h1>
+              <Star />
             </div>
             <div className="user">
               <img src="https://github.com/Gisellebm.png" alt="Foto do Usuário" />

@@ -19,7 +19,8 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     margin: 0 auto;
-    max-width: 80%;
+    padding: 0 12.3rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -30,12 +31,25 @@ export const Content = styled.div`
         align-items: flex-start;
         gap: 2.4rem;
 
-        > h1 {
-            font-weight: 500;
-            font-size: 3.6rem;
-            line-height: 4.7rem;
-            color: ${({ theme }) => theme.COLORS.WHITE};
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 1.9rem;
+
+            > h1 {
+                font-weight: 500;
+                font-size: 3.6rem;
+                line-height: 4.7rem;
+                letter-spacing: 0.2rem;
+                color: ${({ theme }) => theme.COLORS.WHITE};
+            }
+
+            > svg {
+                width: 2rem;
+                height: 2rem;
+            }
         }
+
 
         > .user {
             display: flex;
@@ -58,18 +72,22 @@ export const Content = styled.div`
                 color: ${({ theme }) => theme.COLORS.WHITE};
             }
 
+            svg {
+                color: ${({ theme }) => theme.COLORS.PINK};
+            }
+        }
+    }
+  
+    > article {
+
+        p {
+            line-height: 2.1rem;
+            text-align: justify;
+            font-weight: 400;
         }
 
-        > article {
-
-            p {
-                line-height: 2.1rem;
-                text-align: justify;
-            }
-
-            p:first-of-type {
-                margin-bottom: 2.4rem;
-            }
+        p:first-of-type {
+            margin-bottom: 2.4rem;
         }
     }
 

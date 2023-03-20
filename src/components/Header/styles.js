@@ -21,32 +21,44 @@ export const Container = styled.header`
         line-height: 3.2rem;
         font-weight: 700;
     }
+
+    @media (max-width: 40rem) {
+        gap: 3.2rem;
+    }
 `;
 
 export const Profile = styled.div`
     display: flex;
+    justify-self: end;
     align-items: center;
-    width: 25%;
     
 
     > div {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-
+        text-align: end;
         margin-right: 1rem;
 
         font-size: 1.4rem;
-        line-height: 1.8rem;
+        line-height: 2rem;
 
-        p {
-            font-weight: 700;
+        strong {
             color: ${({ theme }) => theme.COLORS.WHITE};
+            white-space: nowrap;
         }
 
-        a {
+        button {
+            background-color: transparent;
+            border: none;
+            font-size: 1.4rem;
             font-weight: 400;
+            line-height: 1.8rem;
             color: ${({ theme }) => theme.COLORS.GRAY_300};
+        }
+
+        button:hover {
+            color: ${({ theme }) => theme.COLORS.PINK};
         }
     }
 

@@ -12,10 +12,11 @@ export function Header() {
                 placeholder="Pesquisar pelo título"
                 icon={FiSearch} 
             />
+            
             <Profile>               
                 <div>
-                    <p>Giselle Brasil</p>
-                    <a href='#'>Sair</a>
+                    <strong>Giselle Brasil</strong>
+                    <button>Sair</button>
                 </div>
 
                 <img
