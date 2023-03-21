@@ -36,6 +36,7 @@ export const Form = styled.form`
         line-height: 3.2rem;
     }
 
+
     > a {
         margin-top: 4.2rem;
         color: ${({ theme }) => theme.COLORS.PINK};

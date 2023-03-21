@@ -8,8 +8,8 @@ export const Container = styled.span`
     border-radius: 0.8rem;
     background-color: ${({ theme }) => theme.COLORS.BROWN};
     color: ${({ theme }) =>theme.COLORS.TEXT_TAG};
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
     font-family: 'Roboto', serif;
     font-weight: 400;
 `;
