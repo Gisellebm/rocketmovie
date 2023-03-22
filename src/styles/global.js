@@ -32,4 +32,25 @@ export default createGlobalStyle`
         transition: filter 0.2s;
     }
 
+    button:hover, a:hover {
+        filter: brightness(.9);
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.8rem;
+        height: 2.6rem;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: .8rem;
+        background-color: ${({ theme }) => theme.COLORS.PINK};
+        right: 10.6rem;
+        top: 4.5rem;
+
+    }
+
 `;

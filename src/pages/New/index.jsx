@@ -4,6 +4,7 @@ import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
 import { Textarea } from "../../components/Textarea";
 import { ButtonText } from '../../components/ButtonText';
+import { NoteItem } from '../../components/NoteItem';
 
 
 export function New() {
@@ -34,8 +35,15 @@ export function New() {
 
                     <Textarea placeholder="Observações" />
 
-                    <div className="twoColumns">
-                        <Button title="Excluir Filme" />
+                    <h3>Marcadores</h3>
+
+                    <div className="tags">
+                        <NoteItem value="Drama"/>
+                        <NoteItem placeholder="Novo marcador" isNew />
+                    </div>
+
+                    <div className="btnTwoColumns">
+                        <Button className="special" title="Excluir Filme" />
                         <Button title="Salvar Alterações" />
                     </div>
                 </Form>

@@ -5,15 +5,22 @@ export const Container = styled.header`
     
     width: 100%;
     height: 11.6rem;
-
     display: flex;
     align-items: center;
-    padding: 2.4rem 12.3rem;
-    justify-content: space-between;
-    gap: 6.4rem;
 
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_200};
+
+`;
+
+export const Content = styled.div`
+    width: 100%;
+    max-width: 113.6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.4rem;
 
     > h1 {
         color: ${({ theme }) => theme.COLORS.PINK};
@@ -22,9 +29,6 @@ export const Container = styled.header`
         font-weight: 700;
     }
 
-    @media (max-width: 40rem) {
-        gap: 3.2rem;
-    }
 `;
 
 export const Profile = styled.div`
