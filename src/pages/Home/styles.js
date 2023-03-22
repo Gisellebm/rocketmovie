@@ -33,11 +33,6 @@ export const Content = styled.div`
             font-size: 32px;
             line-height: 42px;
         }
-
-        > button {
-            width: 207px;
-            height: 48px;
-        }
     }
 
 

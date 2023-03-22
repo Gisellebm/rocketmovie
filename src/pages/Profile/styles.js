@@ -12,20 +12,6 @@ export const Container = styled.div`
         align-items: center;
 
         padding: 0 14.4rem;
-
-        > a {
-            display: flex;
-            align-items: center;
-            width: 7.2rem;
-            height: 2.1rem;
-            color: ${({ theme }) => theme.COLORS.PINK};
-            font-size: 1.6rem;
-
-            svg {
-                color: ${({ theme }) => theme.COLORS.PINK};
-                margin-right: 0.8rem;  
-            }
-        }
     }
 `;
 

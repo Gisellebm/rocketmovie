@@ -2,16 +2,14 @@ import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi';
 import { Container, Form, Avatar } from "./styles";
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
+import { ButtonText } from '../../components/ButtonText';
 
 
 export function Profile() {
     return (
         <Container>
             <header>
-                <a href="/">
-                    <FiArrowLeft/>
-                    <span>Voltar</span>
-                </a>
+                <ButtonText icon={FiArrowLeft} text="Voltar" to="/" />    
             </header>
 
             <Form>

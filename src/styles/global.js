@@ -38,7 +38,6 @@ export default createGlobalStyle`
 
     ::-webkit-scrollbar {
         width: 0.8rem;
-        height: 2.6rem;
     }
 
     ::-webkit-scrollbar-track {
@@ -48,9 +47,6 @@ export default createGlobalStyle`
     ::-webkit-scrollbar-thumb {
         border-radius: .8rem;
         background-color: ${({ theme }) => theme.COLORS.PINK};
-        right: 10.6rem;
-        top: 4.5rem;
-
     }
 
 `;

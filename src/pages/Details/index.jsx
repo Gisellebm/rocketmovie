@@ -4,6 +4,7 @@ import { Header } from '../../components/Header';
 import { ButtonText } from '../../components/ButtonText';
 import { Tag } from '../../components/Tag';
 import { Star } from '../../components/Star';
+import { Link } from 'react-router-dom';
 
 
 export function Details() {
@@ -14,7 +15,7 @@ export function Details() {
       <main>
         <Content>
           <header>
-            <ButtonText icon={FiArrowLeft} title="Voltar" />
+            <ButtonText icon={FiArrowLeft} text="Voltar" to="/" />
             <div className="title">
               <h1>Interestellar</h1>
               <Star />

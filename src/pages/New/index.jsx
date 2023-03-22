@@ -5,6 +5,7 @@ import { Input } from '../../components/Input';
 import { Textarea } from "../../components/Textarea";
 import { ButtonText } from '../../components/ButtonText';
 import { NoteItem } from '../../components/NoteItem';
+import { FiArrowLeft } from "react-icons/fi";
 
 
 export function New() {
@@ -15,7 +16,7 @@ export function New() {
             <main>
                 <Form>
                     <header>
-                        <ButtonText />
+                        <ButtonText icon={FiArrowLeft} text="Voltar" to="/" />
                         <h1>Novo filme</h1>
                     </header>
 
