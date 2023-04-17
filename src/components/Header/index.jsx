@@ -1,8 +1,14 @@
 import { FiSearch } from 'react-icons/fi';
 import { Container, Content, Profile } from './styles';
 import { Input } from '../../components/Input';
+import { useAuth } from '../../hooks/auth';
+import { api } from '../../services/api';
 
 export function Header() {
+    const { signOut, user } = useAuth();
+
+    const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
+
     return (
         <Container>
             <Content>
@@ -16,13 +22,13 @@ export function Header() {
                 
                 <Profile to="/profile">               
                     <div>
-                        <strong>Giselle Brasil</strong>
-                        <button>Sair</button>
+                        <strong>{user.name}</strong>
+                        <button onClick={signOut} to="/">Sair</button>
                     </div>
 
                     <img
-                        src='https://github.com/Gisellebm.png'
-                        alt='Foto do usuário'
+                        src={avatarUrl}
+                        alt={user.name}
                     />
                 </Profile>
             </Content>
